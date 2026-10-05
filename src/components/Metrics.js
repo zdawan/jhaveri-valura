@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const metrics = [
     {
@@ -236,7 +237,7 @@ export default function Metrics() {
             <div className="mx-auto max-w-[1024px]">
 
                 {/* Section Header (Matching Core Expertise) */}
-                <div className="mb-12 max-w-3xl mx-auto flex flex-col items-center text-center">
+                <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, ease: "easeOut" }} className="mb-12 max-w-3xl mx-auto flex flex-col items-center text-center">
                     <div className="mb-4 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-[#0054A1]">
                         <svg
                             width="14"
@@ -256,10 +257,10 @@ export default function Metrics() {
                         Scale and Trust <br className="hidden sm:inline" />
                         <span className="text-[#0054A1]">by the numbers</span>
                     </h2>
-                </div>
+                </motion.div>
 
                 {/* 2x2 STAGGERED CARDS GRID */}
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 w-full">
+                <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1, delay: 0.2, ease: "easeOut" }} className="grid grid-cols-1 gap-6 sm:grid-cols-3 w-full">
 
                     {/* ROW 1 - CARD 1 (SMALL - 1 SPAN) */}
                     <div className="sm:col-span-1">
@@ -281,7 +282,7 @@ export default function Metrics() {
                         <MetricCard metric={metrics[3]} />
                     </div>
 
-                </div>
+                </motion.div>
 
             </div>
         </section>

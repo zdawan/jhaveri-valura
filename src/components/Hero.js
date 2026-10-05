@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,31 +11,31 @@ const Hero = () => {
         {/* Top Text Content Area */}
         <div className="mx-auto max-w-4xl pt-2 text-center sm:pt-4">
           {/* Top Badge Tag */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#0054A1]/15 bg-blue-50/60 px-4 py-1.5 text-xs font-semibold text-[#0054A1] sm:text-sm">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="inline-flex items-center gap-2 rounded-full border border-[#0054A1]/15 bg-blue-50/60 px-4 py-1.5 text-xs font-semibold text-[#0054A1] sm:text-sm">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0054A1] opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0054A1]" />
             </span>
             <span>Jhaveri Securities × Valura.Ai</span>
-          </div>
+          </motion.div>
 
           {/* Main Title (Centered) */}
-          <h1 className="mt-5 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-[#3C3C43] leading-[1.15] sm:leading-[1.15]">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }} className="mt-5 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-[#3C3C43] leading-[1.15] sm:leading-[1.15]">
             The Global Investment Desk <br className="hidden sm:inline" />
             <span className="text-[#0054A1]">for Indian Investors</span>
-          </h1>
+          </motion.h1>
 
           {/* Supporting Subtitle (Centered) */}
-          <p className="mx-auto mt-5 max-w-2xl text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} className="mx-auto mt-5 max-w-2xl text-lg md:text-xl text-gray-500 font-medium leading-relaxed">
             Access 4,000+ US equities, 5–9% USD income notes, and curated pre-IPO deals — from India, regulated through GIFT IFSC, managed by the same team you trust.
-          </p>
+          </motion.p>
 
           {/* Two CTAs */}
-          <div className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }} className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
             {/* Primary CTA */}
             <a
               href="#open-account"
-              className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-[#0054A1] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#0054A1]/25 transition-all duration-200 hover:bg-[#004382] hover:shadow-xl hover:shadow-[#0054A1]/35 hover:-translate-y-0.5 sm:w-auto"
+              className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-[#EE396A] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#EE396A]/25 transition-all duration-200 hover:bg-[#D62955] hover:shadow-xl hover:shadow-[#EE396A]/35 hover:-translate-y-0.5 sm:w-auto"
             >
               <span>Open an Account</span>
               <svg
@@ -72,11 +73,11 @@ const Hero = () => {
                 />
               </svg>
             </a>
-          </div>
+          </motion.div>
         </div>
 
         {/* Dashboard Image Mockup Pinned & Clipped at 100% Height */}
-        <div className="relative mt-8 sm:mt-10 mx-auto w-full max-w-6xl">
+        <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4, ease: "easeOut" }} className="relative mt-8 sm:mt-10 mx-auto w-full max-w-6xl">
           {/* Subtle Outer Glow */}
           <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-[#0054A1]/15 via-[#05A049]/15 to-[#0054A1]/15 opacity-60 blur-2xl" />
 
@@ -96,7 +97,7 @@ const Hero = () => {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 sm:h-48 bg-gradient-to-t from-[#FAF9F6] via-[#FAF9F6]/85 via-60% to-transparent" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* SCROLL TO EXPLORE INDICATOR AT BOTTOM OF SCREEN */}

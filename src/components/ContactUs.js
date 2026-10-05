@@ -88,7 +88,7 @@ const ContactUs = () => {
                 </select>
               </div>
 
-              <button className="w-full bg-[#2E68FF] hover:bg-[#2554E6] transition-colors text-white font-bold text-[15px] py-4 rounded-lg mt-4 flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(46,104,255,0.39)]">
+              <button className="w-full bg-[#EE396A] hover:bg-[#D62955] transition-colors text-white font-bold text-[15px] py-4 rounded-lg mt-4 flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(238,57,106,0.39)]">
                 Contact us <span>→</span>
               </button>
 

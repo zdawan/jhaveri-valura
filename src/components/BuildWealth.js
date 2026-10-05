@@ -24,7 +24,7 @@ const BuildWealth = () => {
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-500 font-medium">
           US equities, USD income notes, and Pre-IPO deals — all unified in one global dashboard.
         </p>
-        <button className="mt-8 rounded-full border-2 border-[#0054A1] bg-transparent px-8 py-3.5 text-[#0054A1] font-bold hover:bg-[#0054A1] hover:text-white transition-all text-sm md:text-base shadow-sm">
+        <button className="mt-8 rounded-full border-2 border-[#EE396A] bg-transparent px-8 py-3.5 text-[#EE396A] font-bold hover:bg-[#EE396A] hover:text-white transition-all text-sm md:text-base shadow-sm">
           See all features
         </button>
 
@@ -116,7 +116,7 @@ const BuildWealth = () => {
 
             <div className="grid grid-cols-2 gap-3 mt-2">
               <button className="py-2.5 rounded-full border border-gray-200 text-sm font-semibold text-[#3C3C43] hover:border-gray-300 hover:bg-gray-50 transition-all shadow-sm">Compare</button>
-              <button className="py-2.5 rounded-full bg-[#0054A1] text-white text-sm font-semibold hover:bg-[#004382] transition-all shadow-sm">Invest Now</button>
+              <button className="py-2.5 rounded-full bg-[#EE396A] text-white text-sm font-semibold hover:bg-[#D62955] transition-all shadow-sm">Invest Now</button>
             </div>
           </div>
         </div>

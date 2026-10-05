@@ -53,7 +53,7 @@ const Navbar = () => {
           </a>
           <a
             href="#start"
-            className="inline-flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-md"
+            className="inline-flex items-center gap-2 rounded-full bg-[#EE396A] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#D62955] hover:shadow-md shadow-sm"
           >
             <span>Get Started</span>
             <svg
@@ -147,7 +147,7 @@ const Navbar = () => {
               <a
                 href="#start"
                 onClick={() => setMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white hover:bg-gray-800"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#EE396A] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#D62955] shadow-sm"
               >
                 <span>Get Started</span>
                 <svg

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const capabilities = [
   {
@@ -32,7 +33,7 @@ const CoreExpertise = () => {
     <section className="bg-white px-6 py-24 lg:py-32 md:px-10 text-gray-900 border-b border-gray-100 relative overflow-hidden">
       <div className="mx-auto max-w-[1320px]">
         {/* Section Header (Matching Techlair layout) */}
-        <div className="mb-12 max-w-3xl mx-auto flex flex-col items-center text-center">
+        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, ease: "easeOut" }} className="mb-12 max-w-3xl mx-auto flex flex-col items-center text-center">
           <div className="mb-4 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-[#0054A1]">
             <svg
               width="14"
@@ -52,12 +53,12 @@ const CoreExpertise = () => {
             End-to-End Wealth <br className="hidden sm:inline" />
             <span className="text-[#0054A1]">Capabilities</span>
           </h2>
-        </div>
+        </motion.div>
 
         {/* ========================================================================= */}
         {/* TECHLAIR SPLIT SHOWCASE: ACCORDION LEFT + DYNAMIC FRAME RIGHT */}
         {/* ========================================================================= */}
-        <div className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1, delay: 0.2, ease: "easeOut" }} className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
           {/* Left Accordion List */}
           <div className="flex flex-col justify-center space-y-3">
             {capabilities.map((item, index) => {
@@ -134,7 +135,7 @@ const CoreExpertise = () => {
               />
             )}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
