@@ -48,10 +48,10 @@ const metrics = [
         customRender: () => (
             <div className="flex h-[260px] sm:h-[280px] w-full flex-col items-center justify-between rounded-2xl border border-[#E5E7EB] bg-white p-6 sm:p-7 group">
                 <div className="text-center w-full">
-                    <h3 className="text-4xl sm:text-[42px] md:text-5xl font-medium tracking-[-0.02em] text-[#111111]">
+                    <h3 className="text-5xl sm:text-[52px] md:text-[56px] font-medium tracking-[-0.02em] text-[#111111]">
                         4,000+
                     </h3>
-                    <p className="mt-2 text-sm sm:text-base font-normal leading-[1.5] text-[#8E9398]">
+                    <p className="mt-2 text-base sm:text-lg font-normal leading-[1.5] text-[#8E9398]">
                         US stocks &amp; ETFs, fractional
                     </p>
                 </div>
@@ -304,10 +304,10 @@ function MetricCard({ metric }) {
 
             {/* TEXT */}
             <div>
-                <h3 className="text-4xl sm:text-[42px] md:text-5xl font-medium tracking-[-0.02em] text-[#111111]">
+                <h3 className="text-5xl sm:text-[52px] md:text-[56px] font-medium tracking-[-0.02em] text-[#111111]">
                     {metric.title}
                 </h3>
-                <p className="mt-2 max-w-[280px] text-sm sm:text-base font-normal leading-[1.5] text-[#8E9398]">
+                <p className="mt-2 max-w-[280px] text-base sm:text-lg font-normal leading-[1.5] text-[#8E9398]">
                     {metric.description}
                 </p>
             </div>
