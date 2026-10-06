@@ -88,8 +88,9 @@ const Hero = () => {
               <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-12 bg-gradient-to-b from-[#FAF9F6]/70 via-[#FAF9F6]/20 to-transparent" />
 
               <img
-                src="/dashboard.jpg"
+                src="/dashboard.webp"
                 alt="Jhaveri Securities × Valura.Ai Dashboard"
+                fetchpriority="high"
                 className="h-auto w-full object-cover object-top"
               />
 

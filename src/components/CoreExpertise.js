@@ -115,22 +115,25 @@ const CoreExpertise = () => {
           <div className="relative flex w-full h-[380px] sm:h-[460px] lg:h-[540px] items-center justify-center rounded-[28px] overflow-hidden shadow-xl border border-blue-200/60 transition-all duration-500 bg-[#E0EFFF]">
             {activeTab === 0 && (
               <img 
-                src="/img01.png" 
+                src="/img01.webp" 
                 alt="Portfolio Analysis" 
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" 
               />
             )}
             {activeTab === 1 && (
               <img 
-                src="/img02.png" 
+                src="/img02.webp" 
                 alt="Your KYC Documents" 
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" 
               />
             )}
             {activeTab === 2 && (
               <img 
-                src="/img03.png" 
+                src="/img03.webp" 
                 alt="My Bank Accounts" 
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" 
               />
             )}
