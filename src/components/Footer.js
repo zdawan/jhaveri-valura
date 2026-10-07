@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-black text-[#A1A1AA] overflow-hidden relative font-sans">
-      
+
       {/* Top Marquee Strip */}
       <div className="w-full bg-[#0054A1] overflow-hidden py-6 border-y border-[#0054A1]/80">
         <div className="flex whitespace-nowrap animate-marquee">
@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-8 relative z-10">
         {/* Main Links Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 lg:gap-8 mb-16">
-          
+
           {/* Column 1 */}
           <div>
             <h4 className="text-white text-xs md:text-sm font-bold tracking-widest uppercase mb-6">Platform</h4>
@@ -83,9 +83,9 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-2 lg:ml-auto w-full max-w-[380px]">
             <h4 className="text-white text-xs md:text-sm font-bold tracking-widest uppercase mb-6">Stay Updated</h4>
             <div className="flex bg-[#111113] rounded-full p-1.5 mb-5 border border-gray-800">
-              <input 
-                type="email" 
-                placeholder="Email address" 
+              <input
+                type="email"
+                placeholder="Email address"
                 className="bg-transparent text-white px-5 py-3 text-sm md:text-base w-full focus:outline-none placeholder:text-gray-600"
               />
               <button className="bg-white text-black px-6 py-3 rounded-full text-sm font-bold flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors whitespace-nowrap min-w-[140px]">
@@ -104,13 +104,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div className="max-w-2xl">
             <p className="text-xs md:text-sm text-[#A1A1AA] mb-2 font-medium">
-              © 2025 Jhaveri Financial Advisors × Valura.AI Pvt. Ltd. All rights reserved.
+              © 2025 Jhaveri Securities × Valura.AI Pvt. Ltd. All rights reserved.
             </p>
             <p className="text-[11px] md:text-xs text-[#52525B] leading-relaxed">
               Investments through this platform are subject to market risk. GIFT IFSC regulated. Read all product-related documents carefully before investing.
             </p>
           </div>
-          
+
           <div className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-medium text-[#A1A1AA]">
             <a href="/" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="/" className="hover:text-white transition-colors">Privacy Policy</a>
@@ -121,11 +121,11 @@ const Footer = () => {
 
       {/* Massive Background Text and Subtle Wave Glow */}
       <div className="relative mt-8 overflow-hidden h-[180px] md:h-[220px] flex items-end justify-center pointer-events-none select-none">
-        
+
         {/* Subtle Blue Glow / Wave equivalent */}
         <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-[150%] md:w-[120%] h-[120px] md:h-[150px] bg-[#0274F5]/10 blur-[100px] rounded-[100%] z-0"></div>
         <div className="absolute bottom-[20%] left-1/4 w-[50%] h-[80px] bg-[#0274F5]/5 blur-[80px] rounded-[100%] z-0 transform rotate-12"></div>
-        
+
         {/* Massive Text */}
         <div className="absolute bottom-[-10%] md:bottom-[-20%] font-black text-[#15151a] text-[130px] sm:text-[180px] md:text-[240px] lg:text-[280px] tracking-tighter leading-none whitespace-nowrap z-10">
           JHAVERI
